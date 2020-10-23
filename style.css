@@ -1,0 +1,443 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+/*FOR THE NAVIGATION
+FIX hover later as it doesn't hover back after clicked
+*/
+
+.sidebar-toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding: 3vmin;
+  color: white;
+}
+#sidebar-toggle-input {
+  display: none;
+}
+#sidebar-toggle-input+label:before {
+  content: "☰";
+  font-size: 5vmin;
+  cursor: pointer;
+  color: white;
+  padding: 3vmin;
+  border: none;
+}
+#sidebar-toggle-input:checked + label:before {
+  content: "x"
+}
+.sidebar {
+  position: fixed;
+  width: 200px;
+  transition: 0.3s;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.sidebar a {
+  padding: 7vmin 1vmin 1vmin 15vmin;
+  text-decoration: none;
+  font-size: 25px;
+  color: #CFCFCF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: white;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 2px #fff
+}
+
+#sidebar-toggle-input:checked ~ .sidebar {
+  transform: none;
+}
+
+/*HERO IMAGE*/
+
+.mainHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/bckg.gif");
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-attachment: fixed;
+}
+.mainHeader p {
+  font-size: 5vmin;
+  color: #fff;
+    text-shadow:
+      0px 0px 5px #fff,
+      0px 0px 10px #fff,
+      0px 0px 10px #fff
+}
+.mainHeader p:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow:
+    0 0 20px #fff,
+    0 0 30px #fff
+}
+
+/*SCROLL DOWN ON FIRST PAGE
+.scroll {
+  display: flex;
+  opacity: 10;
+  height: 0px;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+
+}
+
+*/
+/* FOR THE INDEX HERO IMAGES*/
+.firstHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_picture.jpg");
+  height: 50vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: .5s ease;
+}
+
+.firstHeader:hover {
+  opacity: 0.7;
+}
+
+.firstHeader a:link, a:visited {
+  color: white;
+  padding: 20vmin 80vmin;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 5vmin;
+}
+
+/*
+#firstHeader a:hover, a:active {
+}*/
+
+.secondHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_video4.gif");
+  height: 50vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: .5s ease;
+}
+
+.secondHeader:hover {
+  opacity: 0.7;
+}
+
+.secondHeader a:link, a:visited {
+  color: white;
+  padding: 20vmin 80vmin;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 5vmin;
+}
+
+.thirdHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_sound.jpg");
+  height: 50vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: .5s ease;
+}
+
+.thirdHeader:hover {
+  opacity: 0.7;
+}
+
+.thirdHeader a:link, a:visited {
+  color: white;
+  padding: 20vmin 80vmin;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 5vmin;
+}
+
+.fourthHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_psych.jpeg");
+  height: 50vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: .5s ease;
+}
+
+.fourthHeader:hover {
+  opacity: 0.7;
+}
+
+.fourthHeader a:link, a:visited {
+  color: white;
+  padding: 20vmin 80vmin;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 5vmin;
+}
+
+/*--------------- FOR THE ABOUT PAGE --------------*/
+.aboutHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("images/about.jpg");
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.aboutHeader p {
+  padding: 30vmin;
+  font-size: 5vmin;
+  color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 2px #fff
+}
+
+
+/*--------------- FOR THE IMAGE PAGE --------------*/
+.imagesHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_picture.jpg");
+  height: 80vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.imagesHeader p {
+  font-size: 5vmin;
+  color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 2px #fff
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4vmin;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24.2%;
+  max-width: 24.2%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/*--------------- FOR THE VIDEO PAGE --------------*/
+.videoHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_video4.gif");
+  height: 80vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.videoHeader p {
+  font-size: 5vmin;
+  color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 2px #fff
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.videos_yt, .videos_yt2, .videos_yt3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vmin;
+}
+
+/*--------------- FOR THE SOUND PAGE --------------*/
+.soundHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_sound.jpg");
+  height: 80vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.soundHeader p {
+  font-size: 5vmin;
+  color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 2px #fff
+}
+
+.sounds1, .sounds2, .sounds3 {
+  display: flex;
+  padding: 10vmin;
+  background-color: white;
+  justify-content: space-around;
+}
+
+.sounds1 p {
+  padding-left: 2.2vmin;
+  padding-right: 5vmin;
+  text-align: center;
+  font-size: 3vmin;
+}
+
+.sounds2 p {
+  padding-left: 2vmin;
+  padding-right: 4.5vmin;
+  text-align: center;
+  font-size: 3vmin;
+}
+
+.sounds3 p {
+  padding-left: 2.5vmin;
+  padding-right: 5.8vmin;
+  text-align: center;
+  font-size: 3vmin;
+}
+
+/*--------------- FOR THE PSYCH PAGE --------------*/
+.psychHeader {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("images/index_psych.jpeg");
+  height: 80vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.psychHeader > p {
+  font-size: 5vmin;
+  color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 2px #fff
+}
+
+
+.mainContainer > p {
+  font-size: 3vmin;
+  color: white;
+  text-align: center;
+  padding-left: 30vmin;
+  padding-right: 30vmin;
+  line-height: 1.7em;
+}
+
+.link_p {
+  padding: 5vmin;
+  padding-bottom: 10vmin;
+  text-align: center;
+}
+
+.link_p a:hover {
+  color: blue;
+}
+
+.img {
+  display: flex;
+  width: 20vmin;
+  height: 15vmin;
+  padding: 10vmin;
+}
+
+h3 {
+  color:white;
+  font-size: 5vmin;
+  text-align: center;
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+  padding-top: 4vmin;
+  padding-bottom: 4vmin;
+}
