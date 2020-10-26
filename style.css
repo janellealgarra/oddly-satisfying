@@ -218,6 +218,18 @@ FIX hover later as it doesn't hover back after clicked
   font-size: 5vmin;
 }
 
+.footer {
+  display: flex;
+  color: white;
+  background-color: black;
+  justify-content: flex-end;
+}
+
+.footer > a {
+  display: flex;
+  justify-content: flex-start;
+}
+
 /*--------------- FOR THE ABOUT PAGE --------------*/
 .aboutHeader {
   display: flex;
