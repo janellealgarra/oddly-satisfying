@@ -9,6 +9,7 @@ html {
 
 body {
   background-color: black;
+  font-family: 'Mallanna', sans-serif;
 }
 
 /*FOR THE NAVIGATION
@@ -133,7 +134,7 @@ FIX hover later as it doesn't hover back after clicked
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 5vmin;
+  font-size: 4.5vmin;
 }
 
 /*
@@ -163,7 +164,7 @@ FIX hover later as it doesn't hover back after clicked
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 5vmin;
+  font-size: 4.5vmin;
 }
 
 .thirdHeader {
@@ -189,7 +190,7 @@ FIX hover later as it doesn't hover back after clicked
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 5vmin;
+  font-size: 4.5vmin;
 }
 
 .fourthHeader {
@@ -215,7 +216,7 @@ FIX hover later as it doesn't hover back after clicked
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 5vmin;
+  font-size: 4.5vmin;
 }
 
 .footer {
@@ -245,7 +246,7 @@ FIX hover later as it doesn't hover back after clicked
 
 .aboutHeader p {
   padding: 30vmin;
-  font-size: 5vmin;
+  font-size: 5.5vmin;
   color: #fff;
     text-shadow:
       0 0 5px #fff,
@@ -257,7 +258,7 @@ FIX hover later as it doesn't hover back after clicked
 .imagesHeader {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_picture.jpg");
-  height: 80vh;
+  height: 85vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -267,7 +268,7 @@ FIX hover later as it doesn't hover back after clicked
 }
 
 .imagesHeader p {
-  font-size: 5vmin;
+  font-size: 5.5vmin;
   color: #fff;
     text-shadow:
       0 0 5px #fff,
@@ -314,7 +315,7 @@ FIX hover later as it doesn't hover back after clicked
 .videoHeader {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_video4.gif");
-  height: 80vh;
+  height: 85vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -324,7 +325,7 @@ FIX hover later as it doesn't hover back after clicked
 }
 
 .videoHeader p {
-  font-size: 5vmin;
+  font-size: 5.5vmin;
   color: #fff;
     text-shadow:
       0 0 5px #fff,
@@ -351,7 +352,7 @@ h2 {
 .soundHeader {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/index_sound.jpg");
-  height: 80vh;
+  height: 85vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -361,7 +362,7 @@ h2 {
 }
 
 .soundHeader p {
-  font-size: 5vmin;
+  font-size: 5.5vmin;
   color: #fff;
     text-shadow:
       0 0 5px #fff,
@@ -400,7 +401,7 @@ h2 {
 .psychHeader {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("images/index_psych.jpeg");
-  height: 80vh;
+  height: 85vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -410,7 +411,7 @@ h2 {
 }
 
 .psychHeader > p {
-  font-size: 5vmin;
+  font-size: 5.5vmin;
   color: #fff;
     text-shadow:
       0 0 5px #fff,
@@ -422,8 +423,8 @@ h2 {
   font-size: 3vmin;
   color: white;
   text-align: center;
-  padding-left: 30vmin;
-  padding-right: 30vmin;
+  padding-left: 27vmin;
+  padding-right: 27vmin;
   line-height: 1.7em;
 }
 
